@@ -1,4 +1,6 @@
 package com.example.practica;
 
-public class Inicio {
+import androidx.fragment.app.Fragment;
+
+public class Inicio extends Fragment {
 }
