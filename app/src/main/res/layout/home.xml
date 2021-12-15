@@ -12,7 +12,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
                 <TextView
                     style="@style/TextAppearance.AppCompat.Display3"
                     android:layout_width="match_parent"
@@ -31,22 +30,37 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="0dp"
-                    android:layout_marginBottom="50dp"
+                    android:layout_marginBottom="30dp"
                     android:text="How are you feeling today ?"
                     android:textColor="#FFFFFF"
                     android:textSize="19dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/search_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    app:endIconMode="clear_text"
+                    android:hint="@string/seach"
+                    >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/search_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLines="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <GridView
                     android:id="@+id/grid_view_imagenes"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:numColumns="2"
+                    android:layout_height="700dp"
                     android:columnWidth="90dp"
-                    android:horizontalSpacing="10dp"
-                    android:verticalSpacing="10dp"
                     android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="2"
                     android:stretchMode="columnWidth"
-                    ></GridView>
+                    android:verticalSpacing="10dp"></GridView>
         </LinearLayout>
 </ScrollView>
